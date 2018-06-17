@@ -5,9 +5,11 @@ import javax.sql.DataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @SpringBootApplication
+@EnableJdbcRepositories
 public class ShellNDataApplication {
   
   private static String dbFileName;

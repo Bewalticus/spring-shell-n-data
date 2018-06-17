@@ -6,6 +6,11 @@ public class Server {
   
   @Id
   public Integer id;
+  public String hostName;
   
+  @Override
+  public String toString() {
+    return "[" + id + ":" + hostName + "]";
+  }
   
 }
